@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Store</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <style>
+    a:focus,
+    button:focus,
+    input:focus {
+      outline: 3px solid #6b89e2;
+      outline-offset: 2px;
+    }
+  </style>
+</head>
+<body>
+  <!--Nav -->
+  <header>
+    <div class="logo">📘 Book Store</div>
+    <nav role="navigation" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Find Your Favorite Books</h1>
+      <p>Shop the latest and trendiest books at unbeatable prices.</p>
+      <a href="#" class="cta-button" role="button">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Product-->
+  <section class="product-showcase">
+    <h2>Recommended Books</h2>
+    <div class="products">
+      <div class="product">
+        <img src="images/book1.webp" alt="The Silent Patient book cover">
+        <h3>The Silent Patient</h3>
+        <p>A thrilling psychological novel that keeps you hooked till the last page.</p>
+      </div>
+      <div class="product">
+        <img src="images/book2.webp" alt="Harry Potter and the Half-Blood Prince book cover">
+        <h3>Harry Potter and the Half-Blood Prince</h3>
+        <p>Harry uncovers secrets from Voldemort’s past with a mysterious potions book.</p>
+      </div>
+      <div class="product">
+        <img src="images/book3.jpg" alt="The Hobbit book cover">
+        <h3>The Hobbit</h3>
+        <p>Bilbo joins a group of dwarves on an epic quest to reclaim their mountain home.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="reviews" aria-labelledby="reviews-heading">
+    <h2 id="reviews-heading">Our Customers' Opinion</h2>
+    <div class="reviews-cards">
+      <div class="review">
+        <p>"Amazing selection of books and fast shipping! I found exactly what I was looking for."</p>
+        <h4>- Sarah Ahmed</h4>
+      </div>
+      <div class="review">
+        <p>"The quality of the books is excellent. Customer service was very helpful with my order."</p>
+        <h4>- Tala Fahad</h4>
+      </div>
+      <div class="review">
+        <p>"I love how easy it is to browse and shop here. Will definitely come back for more!"</p>
+        <h4>- Sahar Khaled</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter-->
+  <section class="newsletter" aria-labelledby="newsletter-heading">
+    <h2 id="newsletter-heading">Register if you want to join Our Newsletter</h2>
+    <p>To get the latest updates and book recommendations.</p>
+    <form action="#" method="POST" class="newsletter-form">
+      <label for="name">Name</label>
+      <input 
+        type="text" 
+        name="name" 
+        id="name" 
+        placeholder="Your name" 
+        required 
+      />
+
+      <label for="email">Email</label>
+      <input 
+        type="email" 
+        name="email" 
+        id="email" 
+        placeholder="Your email" 
+        required 
+      />
+
+      <button type="submit">Subscribe here</button>
+    </form>
+  </section>
+
+  <!-- Footer-->
+  <footer>
+    <div class="footer-social">
+      <h3>To see more, Follow Us</h3>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/harrypotter" target="_blank" rel="noopener" aria-label="Visit our Facebook">
+          <i class="fab fa-facebook-f"></i> Our Facebook
+        </a>
+        <a href="https://twitter.com/BookRiot" target="_blank" rel="noopener" aria-label="Visit our Twitter">
+          <i class="fab fa-twitter"></i> Our Twitter
+        </a>
+        <a href="https://www.instagram.com/barnesandnoble" target="_blank" rel="noopener" aria-label="Visit our Instagram">
+          <i class="fab fa-instagram"></i> Our Instagram
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

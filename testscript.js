@@ -3,7 +3,7 @@ let name = "Reema";
 let age = 22;
 let isStudent = true;
 let result = 10 + 7;
-let message = "Hello, " + name + "! Welcome to my site.";
+let message = "Hello, " + name + " Welcome to my site.";
 
 console.log("Name:", name);
 console.log("Age:", age);
@@ -28,9 +28,9 @@ let score = 88;
 
 if (score >= 0) {
     if (score >= 60) {
-        console.log("Pass the exam.");
+        console.log("Passed the exam.");
     } else {
-        console.log("Fail the exam.");
+        console.log("Failed the exam.");
     }
 } else {
     console.log("Invalid score.");
@@ -40,26 +40,29 @@ if (score >= 0) {
 let day = "friday"; 
 switch (day.toLowerCase()) {
     case "sunday":
-        console.log("Hello, it's Sunday.");
+        console.log("Hello, today is Sunday.");
         break;
     case "monday":
-        console.log("Hello, it's Monday.");
+        console.log("Hello, today is Monday.");
         break;
     case "tuesday":
-        console.log("Hello, it's Tuesday.");
+        console.log("Hello, today is Tuesday.");
         break;
     case "wednesday":
-        console.log("Hello, it's Wednesday.");
+        console.log("Hello, today is Wednesday.");
         break;
     case "thursday":
-        console.log("Hello, it's Thursday.");
+        console.log("Hello, today is Thursday.");
         break;
     case "friday":
-        console.log("Hello, it's Friday.");
+        console.log("Hello, today is Friday.");
         break;
     case "saturday":
-        console.log("Hello, it's Saturday.");
+        console.log("Hello, today is Saturday.");
         break;
+    default:
+    console.log(" Enter a valid day, please ");
+    break;
 }
 
 // can the person vote
@@ -90,17 +93,19 @@ const readline = require('readline').createInterface({
 function askNumber() {
     readline.question('Enter a number: ', (input) => {
         let number = parseInt(input);
+
         if (isNaN(number)) {
             console.log("Please enter a valid number.");
-            askNumber();
+            askNumber();  // Ask again if input is not a number
             return;
         }
+
         if (number < 0) {
-            console.log("Negative number entered. Exit loop.");
-            readline.close();
+            console.log("You entered a negative number. Exit loop.");
+            readline.close(); // Close input and exit
         } else {
             console.log(`You entered: ${number}`);
-            askNumber(); 
+            askNumber();  // Continue asking
         }
     });
 }
@@ -109,7 +114,7 @@ function askNumber() {
 askNumber();
 
 // Iterate over an array of names 
-console.log("names:");
+console.log("names: ");
 let names = ["Reema", "Sara", "Sahar", "Layan"];
 for (let i = 0; i < names.length; i++) {
     console.log(names[i]);
@@ -121,7 +126,7 @@ let sum = 0;
 for (let i = 0; i < numbers.length; i++) {
     sum += numbers[i];
 }
-console.log("Sum of numbers in the array:", sum);
+console.log("Sum of the numbers in the array:", sum);
 
 // array R4
 // Create an array 
@@ -144,16 +149,16 @@ console.log("After updating the second color the colors are:", colors);
 function add(a, b) {
     return a + b;
 }
-console.log("Sum of 5 and 5:", add(5, 5)); 
+console.log("the Sum of 5 and 5:", add(5, 5)); 
 
 function isEven(number) {
     return number % 2 === 0;
 }
-console.log("Is 6 even?", isEven(7)); 
-console.log("Is 7 even?", isEven(8)); 
+console.log("Is 7 even?", isEven(7)); 
+console.log("Is 8 even?", isEven(8)); 
 
 function greet(name) {
-    return "Hello, " + name + "! Welcome.";
+    return "Hello, " + name + " Welcome to the site";
 }
 console.log(greet("Reema"));
 
@@ -161,10 +166,10 @@ console.log(greet("Reema"));
 function calculateArea(radius) {
     return Math.PI * radius * radius;
 }
-console.log("Area of a circle with radius 3:", calculateArea(3)); 
+console.log("Area of a circle with radius 3 :", calculateArea(3)); 
 
 // reverse a string
 function reverseString(str) {
     return str.split("").reverse().join("");
 }
-console.log("Reverse of 'hello':", reverseString("hello")); 
+console.log("Reverse of 'Welcome' is :", reverseString("Welcome")); 
